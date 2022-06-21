@@ -669,7 +669,7 @@ h3.my-profession {
 }
 
 .portfolio .portfolio-item-inner {
-    width: 600px;
+    width: 90%;
     height: 350px;
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
