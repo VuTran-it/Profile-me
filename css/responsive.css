@@ -1,0 +1,252 @@
+/* PC */
+@media (min-width:1200px) {
+    .nav {
+        height: 100%;
+        right: 25px;
+        bottom: 0;
+    }
+
+}
+
+/* May Tinh Bang Lon */
+@media (max-width:1199px) {
+    .nav {
+        height: 100%;
+        right: 25px;
+        bottom: 0;
+    }
+
+    .section {
+        left: 0;
+    }
+
+    .section.open {
+        left: 270px;
+    }
+
+    .section-title {
+        margin: 90px 0;
+    }
+
+    .section-title h2 {
+        font-size: 50px;
+    }
+
+    .section-title h3 {
+        font-size: 110px;
+    }
+
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+    }
+    
+}
+
+/* May Tinh Bang nhỏ */
+@media (max-width:991px) {
+
+    .section .container {
+        margin-top: 0;
+        padding: 40px 0 0 0;
+    }
+
+    .section
+    {
+        padding: 0  80px 0 60px;
+    }
+
+    .nav {
+        height: 100%;
+        right: 25px;
+        bottom: 0;
+    }
+
+    .contact.contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .home .home-img {
+        display: none;
+    }
+
+    .home .home-img-mobile {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .home .home-img-mobile img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 5px solid var(--bg-black-50);
+        box-shadow: 0 0 10px var(--bg-black-50);
+        background: var(--bg-black-100);
+    }
+
+    .home-img-mobile {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home .home-img::after,
+    .home .home-img::before {
+        display: none;
+    }
+    .contact-content-right,
+    .contact-content-left
+    {
+        flex:  0 0 100%;
+        max-width: 100%;
+    }
+    .contact .contact-info-item {
+        margin-left: 0;
+    }
+}
+
+/* Dien Thoai */
+@media (max-width:767px) {
+
+    .contact .contact-form .col-6,
+    .portfolio .portfolio-item,
+    .service .service-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .section .container {
+        margin-top: 0px;
+    }
+
+    .section {
+        padding: 0 30px;
+    }
+
+    .section .section-title
+    {
+        display: flex;
+        justify-content: left;
+    }
+
+    .section .section-title h2
+    {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+
+    .section .section-title h3
+    {
+        font-size: 60px;
+    }
+
+    .nav li:hover span {
+        display: none;
+    }
+
+    .box-nav {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .box-nav.open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 500;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .box-nav.open .nav {
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.9s;
+    }
+
+    .nav li {
+        position: absolute;
+        list-style: none;
+        left: 0;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-origin: 100px;
+        transition: 0.3s;
+        transition-delay: calc(0.05s * var(--i));
+        transform: rotate(0deg) translateX(23px);
+    }
+
+    .nav.active li {
+        transform: rotate(calc((360deg / 5)*var(--i)));
+    }
+
+    .nav li a {
+        color: var(--text-black-900);
+        text-decoration: none;
+        border-radius: 50%;
+        transform: rotate(calc((360deg / -5)*var(--i)));
+        transition: 0.3s;
+        opacity: 0.6;
+    }
+
+    .nav li:hover a {
+        transform: rotate(calc((360deg / -5)*var(--i))) scale(1.4);
+    }
+
+    .nav li.active a {
+        opacity: 1;
+        transform: rotate(calc((360deg / -5)*var(--i))) scale(1.4);
+    }
+
+    .toggle {
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100000;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+        font-size: 2em;
+        transition: transform 1.25s;
+        transform: rotate(0deg);
+    }
+
+    .nav.active .toggle {
+        transform: rotate(315deg);
+    }
+}
