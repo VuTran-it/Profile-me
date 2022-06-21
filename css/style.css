@@ -850,13 +850,13 @@ h3.my-profession {
 {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-left: 50px;
+    margin-left: 65px;
     display: flex;
 }
 
 .contact .contact-icon .contact-icon-item
 {
-    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .contact .contact-icon .contact-icon-item i

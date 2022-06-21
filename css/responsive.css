@@ -114,6 +114,12 @@
     .contact .contact-info-item {
         margin-left: 0;
     }
+    .contact .contact-icon
+    {
+        margin-bottom: 40px;
+        justify-content: left;
+        margin-left: 10px;
+    }
 }
 
 /* Dien Thoai */
@@ -248,5 +254,12 @@
 
     .nav.active .toggle {
         transform: rotate(315deg);
+    }
+
+    .contact .contact-icon
+    {
+        margin-bottom: 40px;
+        justify-content: left;
+        margin-left: 10px;
     }
 }
