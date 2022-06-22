@@ -40,6 +40,11 @@
         display: block;
         margin-left: 0;
     }
+    .about .about-content .skill-item
+    {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
     
 }
 
@@ -103,6 +108,12 @@
     .home .home-img::after,
     .home .home-img::before {
         display: none;
+    }
+
+    .about .about-content .skill-item
+    {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
     }
 
     .portfolio .portfolio-item {
@@ -266,6 +277,12 @@
 
     .nav.active .toggle {
         transform: rotate(315deg);
+    }
+
+    .about .about-content .skill-item
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
     .contact .contact-icon

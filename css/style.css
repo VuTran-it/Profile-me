@@ -405,7 +405,7 @@ h3.my-profession {
 .about .about-content .personal-info {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-top: 40px;
+    margin: 40px 0;
 }
 
 .about .about-content .personal-info .info-item {
@@ -440,9 +440,119 @@ h3.my-profession {
     flex: 0 0 100%;
     max-width: 100%;
     margin-top: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.about .about-content .skills .skill-item {
+.about .about-content .skill-item
+{
+    flex: 0 0 20%;
+    max-width: 20%;
+    margin-bottom: 40px;
+    padding: 0 30px;
+    position: relative;
+}
+.about .about-content .skill-item .percent
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.about .about-content .skill-item .percent svg
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+
+.about .about-content .skill-item .percent svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 10;
+    stroke: var(--bg-black-100);
+    transform: translate(5px,5px);
+}
+
+.about .about-content .skill-item .percent svg circle:nth-child(2)
+{
+    stroke:var(--skin-color);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    opacity: 0;
+    animation: animateCircle 1s linear forwards;
+    animation-delay: 2s;
+}
+
+@keyframes animateCircle {
+    0%
+    {
+        opacity: 0;
+    } 
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+.skill-item .dot
+{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    transform: rotate(calc(3.6deg * var(--num)));
+    animation: animateDot 2s linear forwards;
+}
+
+@keyframes animateDot {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+.skill-item  .dot::before
+{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--skin-color);
+}
+
+.skill-item .text
+{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: animateCircle 1s linear forwards;
+    animation-delay: 2s;
+}
+
+.skill-item .text p
+{
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--text-black-900);
+}
+
+/* .about .about-content .skills .skill-item {
     flex: 0 0 100%;
     max-width: 100%;
 }
@@ -474,7 +584,7 @@ h3.my-profession {
     height: 100%;
     border-radius: 4px;
     background: var(--skin-color);
-}
+} */
 
 .about .about-content .education,
 .about .about-content .experience {
@@ -548,6 +658,13 @@ h3.my-profession {
     color: var(--text-black-900);
 }
 
+.about .about-content .timeline .timeline-title span
+{
+    font-size: 16px;
+    opacity: 0.5;
+    color: var(--text-black-100);
+}
+
 .about .about-content .timeline .timeline-text {
     line-height: 25px;
     font-size: 16px;
@@ -573,6 +690,7 @@ h3.my-profession {
     padding: 30px 15px;
     text-align: center;
     transition: all 0.3s ease;
+    min-height: 250px;
 }
 
 .service .service-item .service-item-inner:hover {
