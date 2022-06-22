@@ -1,6 +1,6 @@
 /* Typing animation */
 var typed = new Typed(".typing", {
-    strings: ["", "Wed Designer", "Web Developer", "Graphic Designer"],
+    strings: ["", "Font-end Developer", "Photographer"],
     typeSpeed: 100,
     BackSpeed: 60,
     loop: true
@@ -27,15 +27,13 @@ for (let i = 0; i < totalNavList; i++) {
     })
 }
 
-function removeBackSection()
-{
+function removeBackSection() {
     for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.remove("back-section")
     }
 }
 
-function addBackSection(num)
-{
+function addBackSection(num) {
     allSection[num].classList.add('back-section')
 }
 
@@ -47,21 +45,17 @@ function showSection(element) {
     document.querySelector("#" + target).classList.add('active');
 }
 
-function updateNav(element)
-{
-    for(let i=0; i<totalNavList; i++)
-    {
+function updateNav(element) {
+    for (let i = 0; i < totalNavList; i++) {
         navList[i].classList.remove("active")
         const target = element.getAttribute("href").split("#")[1];
-        if(target ===  navList[i].querySelector("a").getAttribute("href").split('#')[1])
-        {
+        if (target === navList[i].querySelector("a").getAttribute("href").split('#')[1]) {
             navList[i].classList.add("active")
         }
     }
 }
 
-document.querySelector(".hire-me").addEventListener("click",function()
-{
+document.querySelector(".hire-me").addEventListener("click", function () {
     const sectionIndex = this.getAttribute("data-section-index");
 
     showSection(this)
@@ -75,9 +69,32 @@ document.querySelector(".hire-me").addEventListener("click",function()
 const portfolioItemInner = document.querySelectorAll(".portfolio-item-inner")
 const portfolioContent = document.querySelectorAll('.portfolio-content')
 
-for(let i = 0 ; i < portfolioItemInner.length ; i++)
-{
-    portfolioItemInner[i].addEventListener('click', function(){
+for (let i = 0; i < portfolioItemInner.length; i++) {
+    portfolioItemInner[i].addEventListener('click', function () {
         portfolioContent[i].classList.toggle("active")
     })
+}
+
+/* email js */
+function sendEmail(params) {
+    var tempParams = {
+        name: document.getElementById("name").value,
+        email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value
+    }
+
+    emailjs.send('service_6koznlq', 'template_hcm6nlk', tempParams)
+        .then(function (res) {
+            console.log("success", res.status);
+        })
+
+    deleteValue()
+}
+
+function deleteValue() {
+    document.getElementById("name").value = ""
+    document.getElementById('email').value = ""
+    document.getElementById('subject').value = ""
+    document.getElementById('message').value = ""
 }

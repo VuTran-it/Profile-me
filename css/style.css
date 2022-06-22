@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&family=Staatliches&display=swap);
 
 * {
     margin: 0;
@@ -48,7 +48,7 @@ ul {
     --text-black-100: #e9e9e9;
 
     --fontFamily-main: 'Poppins', sans-serif;
-    --fontFamily-logo: 'Clicker Script', cursive;
+    --fontFamily-logo: 'Dancing Script', cursive;
 }
 
 body.light {
@@ -63,6 +63,13 @@ body {
     font-size: 16px;
     font-family: var(--fontFamily-main);
     line-height: 1.5;
+}
+
+::selection
+{
+    background: var(--skin-color);
+    color: var(--bg-black-100);
+    opacity: 0.8;
 }
 
 .section {
@@ -166,27 +173,6 @@ body {
     color: var(--text-black-900);
     opacity: 1;
 }
-/* 
-.section-title h2::before {
-    content: '';
-    height: 4px;
-    width: 50px;
-    background: var(--skin-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
-
-.section-title h2::after {
-    content: '';
-    height: 4px;
-    width: 25px;
-    background: var(--skin-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 8px;
-} */
 
 .row {
     display: flex;
@@ -200,7 +186,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
-    color: white;
+    color: var(--bg-black-100);
     border-radius: 40px;
     border: none;
     display: inline-block;
@@ -406,13 +392,6 @@ h3.my-profession {
     max-width: 100%;
 }
 
-.about .about-content .about-text h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    font-weight: 700;
-    color: var(--text-black-900);
-}
-
 .about .about-content .about-text {
     color: var(--skin-color);
 }
@@ -424,8 +403,8 @@ h3.my-profession {
 }
 
 .about .about-content .personal-info {
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-top: 40px;
 }
 
@@ -457,10 +436,9 @@ h3.my-profession {
     margin-top: 10px;
 }
 
-
 .about .about-content .skills {
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-top: 40px;
 }
 
@@ -505,22 +483,13 @@ h3.my-profession {
     margin-top: 30px;
 }
 
-.about .about-content h3.title {
-    font-size: 24px;
-    margin-bottom: 30px;
-    font-weight: 700;
-    color: var(--text-black-900);
-}
-
 .about .about-content .timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
 .about .about-content .timeline {
-    background: var(--bg-black-100);
     padding: 30px 15px;
-    border: 1px solid --bg-black-50;
     border-radius: 10px;
     width: 100%;
     position: relative;
@@ -540,18 +509,22 @@ h3.my-profession {
     content: '';
     width: 1px;
     position: absolute;
-    height: 100px;
+    height: 120px;
     left: 7px;
     top: 0;
-    background: var(--skin-color);
+    background: var(--bg-black-50);
 }
 
 .about .about-content .timeline .circle-dot {
     position: absolute;
-    left: 0;
+    left: -10px;
     top: 0;
-    height: 15px;
-    width: 15px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-black-100);
     border-radius: 50%;
     background: var(--skin-color);
 }
@@ -657,20 +630,17 @@ h3.my-profession {
     margin-bottom: 30px;
 }
 
-.portfolio .portfolio-heading h2 {
-    color: var(--text-black-900);
-    font-weight: 500;
-}
-
 .portfolio .portfolio-item {
     flex: 0 0 50%;
     max-width: 50%;
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
 .portfolio .portfolio-item-inner {
     width: 90%;
-    height: 350px;
+    min-height: 350px;
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
@@ -714,11 +684,6 @@ h3.my-profession {
     border-radius: 20px;
     display: flex;
     align-items: center;
-}
-
-.portfolio .portfolio-item-inner .portfolio-content h2
-{
-    margin-bottom: 40px;
 }
 
 .portfolio .portfolio-item-inner .portfolio-content .btn-liveDemo::before
@@ -779,9 +744,15 @@ h3.my-profession {
     border-radius: 30px;
 }
 
-.portfolio .portfolio-item-inner .portfolio-img img {
+.portfolio .portfolio-item-inner .portfolio-img{
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 350px);
+    text-align: center;
+    position: relative;
+    background: var(--img-url);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Contact */
