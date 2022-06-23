@@ -53,8 +53,8 @@ ul {
 }
 
 body.light {
-    --bg-black-900: #f2f2fc;
-    --bg-black-100: #fdf9ff;
+    --bg-black-900: #efefef;
+    --bg-black-100: #f8f8f8;
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-100: #504e70;
