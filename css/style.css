@@ -162,6 +162,7 @@ body {
 
 .section-title h3
 {
+    color: var(--bg-black-50);
     position: absolute;
     font-size: 130px;
     opacity: 0.5;
@@ -171,7 +172,6 @@ body {
 {
     background: var(--skin-color);
     color: var(--text-black-900);
-    opacity: 1;
 }
 
 .row {
@@ -224,18 +224,12 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
     font-size: 16px;
-    background: var(--bg-black-100);
-    border: 2px solid var(--bg-black-50);
 }
 
 .nav li.active a i,
-.nav li:hover a i,
-.nav li.active,
-.nav li:hover {
+.nav li:hover a i
+{
     background: var(--skin-color);
 }
 
@@ -245,7 +239,7 @@ body {
     bottom: 0px;
     right: 0px;
     text-align: center;
-    padding: 11px 25px;
+    padding: 13px 25px;
     border-radius: 30px 0 0 30px;
     color: var(--text-black-900);
     font-weight: 600;
@@ -288,11 +282,13 @@ body {
     color: var(--text-black-900);
 }
 
-
 .nav li a i {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     background: var(--bg-black-100);
 }
 
@@ -451,20 +447,22 @@ h3.my-profession {
     max-width: 20%;
     margin-bottom: 40px;
     padding: 0 30px;
-    position: relative;
+    position: relative;    
+    display: flex;
+    justify-content: center;
 }
 .about .about-content .skill-item .percent
 {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
 }
 
 .about .about-content .skill-item .percent svg
 {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     transform: rotate(270deg);
 }
 
@@ -481,8 +479,8 @@ h3.my-profession {
 .about .about-content .skill-item .percent svg circle:nth-child(2)
 {
     stroke:var(--skin-color);
-    stroke-dasharray: 440;
-    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    stroke-dasharray: 380;
+    stroke-dashoffset: calc(380 - (380 * var(--num)) / 100);
     opacity: 0;
     animation: animateCircle 1s linear forwards;
     animation-delay: 2s;
@@ -758,7 +756,7 @@ h3.my-profession {
 
 .portfolio .portfolio-item-inner {
     width: 90%;
-    min-height: 350px;
+    min-height: 380px;
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
@@ -784,18 +782,32 @@ h3.my-profession {
     display: none;
 }
 
+.portfolio .portfolio-item-inner .portfolio-content h2
+{
+    color: var(--skin-color);
+    margin-bottom: 10px;
+}
+
+.portfolio .portfolio-item-inner .portfolio-content p{
+    font-size: 16px;
+}
+
+
 .portfolio .portfolio-item-inner .portfolio-content.active
 {
     display: block;
 }
 
+
+
 .portfolio .portfolio-item-inner .portfolio-content .btn-liveDemo
 {
     position: absolute;
     height: 40px;
-    width: 190px;
+    width: 35%;
+    min-width: 190px;
     bottom: 40px;
-    left: 40px;
+    left: 20px;
     background:transparent;
     border: 1px solid var(--skin-color);
     padding: 10px 40px;
@@ -864,7 +876,7 @@ h3.my-profession {
 
 .portfolio .portfolio-item-inner .portfolio-img{
     width: 100%;
-    height: calc(100vh - 350px);
+    height: calc(100vh - 300px);
     text-align: center;
     position: relative;
     background: var(--img-url);

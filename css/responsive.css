@@ -36,16 +36,21 @@
         font-size: 110px;
     }
 
+    .portfolio .portfolio-item-inner .portfolio-content h2
+    {
+        margin-bottom: 10px;
+    }
+
     .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0;
     }
-    .about .about-content .skill-item
-    {
+
+    .about .about-content .skill-item {
         flex: 0 0 25%;
         max-width: 25%;
     }
-    
+
 }
 
 /* May Tinh Bang nhỏ */
@@ -56,9 +61,8 @@
         padding: 40px 0 0 0;
     }
 
-    .section
-    {
-        padding: 0  80px 0 60px;
+    .section {
+        padding: 0 80px 0 60px;
     }
 
     .nav {
@@ -110,8 +114,7 @@
         display: none;
     }
 
-    .about .about-content .skill-item
-    {
+    .about .about-content .skill-item {
         flex: 0 0 33.3333%;
         max-width: 33.3333%;
     }
@@ -123,22 +126,22 @@
         display: flex;
         justify-content: center;
     }
-    .portfolio .portfolio-item-inner
-    {
+
+    .portfolio .portfolio-item-inner {
         width: 80%;
     }
 
     .contact-content-right,
-    .contact-content-left
-    {
-        flex:  0 0 100%;
+    .contact-content-left {
+        flex: 0 0 100%;
         max-width: 100%;
     }
+
     .contact .contact-info-item {
         margin-left: 0;
     }
-    .contact .contact-icon
-    {
+
+    .contact .contact-icon {
         margin-bottom: 40px;
         justify-content: left;
         margin-left: 10px;
@@ -167,21 +170,18 @@
         padding: 0 30px;
     }
 
-    .section .section-title
-    {
+    .section .section-title {
         display: flex;
         justify-content: left;
     }
 
-    .section .section-title h2
-    {
+    .section .section-title h2 {
         font-size: 30px;
         margin-left: 30px;
     }
 
-    .section .section-title h3
-    {
-        font-size: 60px;
+    .section .section-title h3 {
+        font-size: 50px;
     }
 
     .nav li:hover span {
@@ -249,13 +249,15 @@
         opacity: 0.6;
     }
 
-    .nav li:hover a {
-        transform: rotate(calc((360deg / -5)*var(--i))) scale(1.4);
+    .nav li a i
+    {
+        width: 45px;
+        height: 45px;
     }
-
+    
     .nav li.active a {
         opacity: 1;
-        transform: rotate(calc((360deg / -5)*var(--i))) scale(1.4);
+        transform: rotate(calc((360deg / -5)*var(--i)));
     }
 
     .toggle {
@@ -279,16 +281,31 @@
         transform: rotate(315deg);
     }
 
-    .about .about-content .skill-item
-    {
+    .about .about-content .skill-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
 
-    .contact .contact-icon
-    {
+    .portfolio .portfolio-item-inner .portfolio-content h2 {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .portfolio .portfolio-item-inner .portfolio-content p{
+        font-size: 14px;
+    }
+
+    .contact .contact-icon {
         margin-bottom: 40px;
         justify-content: left;
         margin-left: 10px;
+    }
+}
+
+/* Dien Thoai nho*/
+@media (max-width:485px) {
+    .about .about-content .personal-info .info-item {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
