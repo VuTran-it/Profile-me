@@ -44,7 +44,7 @@
     border-radius: 50%;
 }
 
-.style-switcher .remote-controll i,
+.style-switcher .remote-control i,
 .style-switcher .s-icon i 
 {
     line-height: 40px;
@@ -69,22 +69,6 @@
     {
         transform: rotate(360deg);
     }
-}
-
-.style-switcher .remote-control
-{
-    top: 55px;
-}
-
-.style-switcher .remote-control .box-icon 
-{
-    height: 30px;
-    width: 30px;
-    font-size: 20px;
-    background: var(--bg-black-900);
-    color: var(--text-black-900);
-    border-radius: 50%;
-    border: 1px solid var(--skin-color);
 }
 
 
@@ -136,4 +120,36 @@
 .style-switcher .color-5
 {
     background: #f021b2;
+}
+/*  */
+
+
+.style-switcher .remote-control
+{
+    top: 55px;
+    display: flex;
+}
+
+.style-switcher .remote-control .box-icon 
+{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    background: var(--bg-black-900);
+    color: var(--text-black-900);
+    border-radius: 50%;
+    border: 1px solid var(--skin-color);
+}
+
+.remote-control .remote-control-item
+{
+    margin-right: 5px;
+}
+
+.remote-control .language
+{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
