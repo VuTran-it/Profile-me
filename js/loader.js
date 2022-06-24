@@ -1,4 +1,4 @@
-/* const valueLoader = document.querySelector('.value-loader');
+const valueLoader = document.querySelector('.value-loader');
 
 let progressValue = 0;
 let progressEndValue = 100;
@@ -29,4 +29,4 @@ function loading()
     },2300)
 }
 
-loading(); */
+loading();
