@@ -30,7 +30,7 @@ function setActiveStyle(color)
 }
 
 /* Theme light and dark mode */
-const remoteControl = document.querySelector('.remote-control');
+const remoteControl = document.querySelector('.remote-control .dark-light');
 remoteControl.addEventListener("click", () => {
     remoteControl.querySelector("i").classList.toggle("fa-moon")
     remoteControl.querySelector("i").classList.toggle("fa-sun")
