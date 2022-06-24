@@ -124,8 +124,8 @@ body {
 
 .main-container {
     opacity: 1;
-    /* display: none;
-    transition: opacity 2s ease-in; */
+    display: none;
+    transition: opacity 2s ease-in;
 }
 
 .container {
