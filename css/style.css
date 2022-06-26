@@ -122,7 +122,7 @@ body {
     padding-right: 15px;
 }
 
-.main-container {
+.main-container{
     opacity: 1;
     display: none;
     transition: opacity 2s ease-in;
@@ -683,7 +683,7 @@ h3.my-profession {
     padding: 30px 15px;
     text-align: center;
     transition: all 0.3s ease;
-    min-height: 250px;
+    min-height: 300px;
 }
 
 .service .service-item .service-item-inner:hover {
