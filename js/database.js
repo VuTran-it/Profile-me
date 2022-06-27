@@ -170,7 +170,7 @@ export const portfolioValue = {
     },
 
     vn: {
-        portfolioSectionTitle:"<span> Những sản phẩm </span> của tôi",
+        portfolioSectionTitle:"<span> sản phẩm </span> của tôi",
         portfolioSectionSubTitle :"Công Việc",
         portfolioHeading: "DỰ <span>Án</span> <span>Của</span> <span>Tôi</span>",
         portfolioContentBtn:"Thử Trực Tiếp",
