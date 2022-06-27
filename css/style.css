@@ -800,7 +800,7 @@ h3.my-profession {
     position: absolute;
     height: 40px;
     width: 35%;
-    min-width: 190px;
+    min-width: 230px;
     bottom: 40px;
     left: 20px;
     background:transparent;
@@ -814,7 +814,7 @@ h3.my-profession {
 .portfolio .portfolio-item-inner .portfolio-content .btn-liveDemo::before
 {
     content: "";
-    width: 80%;
+    width: 90%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -828,7 +828,7 @@ h3.my-profession {
 @keyframes bgAnimation {
     0%
     {
-        width: 30%;
+        width: 40%;
         opacity: 0;
         left: 100px;
     }

@@ -2,7 +2,9 @@ import database, {
     navValue,
     homeValue,
     aboutValue,
-    serviceValue
+    serviceValue,
+    portfolioValue,
+    contactValue
 } from "./database.js"
 
 const languageBtn = document.querySelector('.language')
@@ -34,6 +36,8 @@ const text_p = document.querySelector('.home .home-info p')
 const text_a = document.querySelector('.home .home-info a')
 
 /* About */
+const aboutSectionTitle = document.querySelector('.about .section-title h2')
+const aboutSectionSubTitle = document.querySelector('.about .section-title h3')
 const aboutTitle1 = document.querySelector('.about-content .about-text .aboutTitle1')
 const aboutText1 = document.querySelector('.about-content .about-text .aboutText1')
 const infoItem = document.querySelectorAll('.personal-info .info-item p')
@@ -53,8 +57,29 @@ const ExperienceTimelineItem = document.querySelectorAll('.experience .timeline-
 
 
 /* service */
+const serviceSectionTitle = document.querySelector('.service .section-title h2')
+const serviceSectionSubTitle = document.querySelector('.service .section-title h3')
 const serviceItemInnerH4 = document.querySelectorAll('.service .service-item h4')
 const serviceItemInnerP = document.querySelectorAll('.service .service-item p')
+
+
+/* Portfolio */
+const portfolioSectionTitle = document.querySelector('.portfolio .section-title h2')
+const portfolioSectionSubTitle = document.querySelector('.portfolio .section-title h3')
+const portfolioHeading = document.querySelector('.portfolio-heading h2')
+const portfolioContentH2 = document.querySelectorAll('.portfolio-content h2')
+const portfolioContentP = document.querySelectorAll('.portfolio-content p')
+const portfolioContentBtn = document.querySelectorAll('.portfolio-content .btn-liveDemo a')
+
+/* contact */
+const contactSectionTitle = document.querySelector('.contact .section-title h2')
+const contactSectionSubTitle = document.querySelector('.contact .section-title h3')
+const contactTitle = document.querySelectorAll('.contact-title')
+const contactSubTitle = document.querySelectorAll('.contact-sub-title')
+const contactInfoItemTextH4 = document.querySelectorAll('.contact-info-item h4')
+const formItem = document.querySelectorAll('.contact-form .form-item span')
+const formItemBtn = document.querySelector('.contact-form .form-item button')
+
 
 
 function handleVietnamese() {
@@ -70,6 +95,8 @@ function handleVietnamese() {
     text_p.innerHTML = homeValue.vn.pText
     text_a.innerHTML = homeValue.vn.aText
     /* about */
+    aboutSectionTitle.innerHTML = aboutValue.vn.aboutSectionTitle
+    aboutSectionSubTitle.innerHTML = aboutValue.vn.aboutSectionSubTitle
     aboutTitle1.innerHTML = aboutValue.vn.aboutTitle1
     aboutText1.innerHTML = aboutValue.vn.aboutText1
     infoItem[0].innerHTML = aboutValue.vn.infoItemName
@@ -98,6 +125,8 @@ function handleVietnamese() {
     ExperienceTimelineTitle[0].innerHTML = aboutValue.vn.ExperienceTimelineTitle1
     ExperienceTimelineItem[0].innerHTML = aboutValue.vn.ExperienceTimelineItem1
     /* service */
+    serviceSectionTitle.innerHTML = serviceValue.vn.serviceSectionTitle
+    serviceSectionSubTitle.innerHTML = serviceValue.vn.serviceSectionSubTitle
     serviceItemInnerH4[0].innerHTML = serviceValue.vn.serviceItemInnerTitle1
     serviceItemInnerP[0].innerHTML = serviceValue.vn.serviceItemInnerText1
     serviceItemInnerH4[1].innerHTML = serviceValue.vn.serviceItemInnerTitle2
@@ -110,7 +139,30 @@ function handleVietnamese() {
     serviceItemInnerP[4].innerHTML = serviceValue.vn.serviceItemInnerText5
     serviceItemInnerH4[5].innerHTML = serviceValue.vn.serviceItemInnerTitle6
     serviceItemInnerP[5].innerHTML = serviceValue.vn.serviceItemInnerText6
+    /* Portfolio */
+    portfolioSectionTitle.innerHTML = portfolioValue.vn.portfolioSectionTitle
+    portfolioSectionSubTitle.innerHTML = portfolioValue.vn.portfolioSectionSubTitle
+    portfolioHeading.innerHTML = portfolioValue.vn.portfolioHeading
+    portfolioContentBtn.forEach((item) => {
+        item.innerHTML = portfolioValue.vn.portfolioContentBtn
+    })
+    portfolioContentH2[0].innerHTML = portfolioValue.vn.portfolioContentTitle1
+    portfolioContentP[0].innerHTML = portfolioValue.vn.portfolioContentText1
+    portfolioContentH2[1].innerHTML = portfolioValue.vn.portfolioContentTitle2
+    portfolioContentP[1].innerHTML = portfolioValue.vn.portfolioContentText2
 
+    /* contact */
+    contactSectionTitle.innerHTML = contactValue.vn.contactSectionTitle
+    contactSectionSubTitle.innerHTML = contactValue.vn.contactSectionSubTitle
+    contactTitle[0].innerHTML = contactValue.vn.contactTitleL
+    contactSubTitle[0].innerHTML = contactValue.vn.contactSubTitleL
+    contactInfoItemTextH4[0].innerHTML = contactValue.vn.contactInfoItemText1
+    contactInfoItemTextH4[1].innerHTML = contactValue.vn.contactInfoItemText2
+    contactTitle[1].innerHTML = contactValue.vn.contactTitleR
+    contactSubTitle[1].innerHTML = contactValue.vn.contactSubTitleR
+    formItem[0].innerHTML = contactValue.vn.formItemName
+    formItem[2].innerHTML = contactValue.vn.formItemSubject
+    formItemBtn.innerHTML = contactValue.vn.formItemBtn
 }
 
 function handleEnglish() {
@@ -126,6 +178,8 @@ function handleEnglish() {
     text_p.innerHTML = homeValue.en.pText
     text_a.innerHTML = homeValue.en.aText
     /* about */
+    aboutSectionTitle.innerHTML = aboutValue.en.aboutSectionTitle
+    aboutSectionSubTitle.innerHTML = aboutValue.en.aboutSectionSubTitle
     aboutTitle1.innerHTML = aboutValue.en.aboutTitle1
     aboutText1.innerHTML = aboutValue.en.aboutText1
     infoItem[0].innerHTML = aboutValue.en.infoItemName
@@ -154,6 +208,8 @@ function handleEnglish() {
     ExperienceTimelineTitle[0].innerHTML = aboutValue.en.ExperienceTimelineTitle1
     ExperienceTimelineItem[0].innerHTML = aboutValue.en.ExperienceTimelineItem1
     /* service */
+    serviceSectionTitle.innerHTML = serviceValue.en.serviceSectionTitle
+    serviceSectionSubTitle.innerHTML = serviceValue.en.serviceSectionSubTitle
     serviceItemInnerH4[0].innerHTML = serviceValue.en.serviceItemInnerTitle1
     serviceItemInnerP[0].innerHTML = serviceValue.en.serviceItemInnerText1
     serviceItemInnerH4[1].innerHTML = serviceValue.en.serviceItemInnerTitle2
@@ -166,4 +222,28 @@ function handleEnglish() {
     serviceItemInnerP[4].innerHTML = serviceValue.en.serviceItemInnerText5
     serviceItemInnerH4[5].innerHTML = serviceValue.en.serviceItemInnerTitle6
     serviceItemInnerP[5].innerHTML = serviceValue.en.serviceItemInnerText6
+    /* Portfolio */
+    portfolioSectionTitle.innerHTML = portfolioValue.en.portfolioSectionTitle
+    portfolioSectionSubTitle.innerHTML = portfolioValue.en.portfolioSectionSubTitle
+    portfolioHeading.innerHTML = portfolioValue.en.portfolioHeading
+    portfolioContentBtn.forEach((item) => {
+        item.innerHTML = portfolioValue.en.portfolioContentBtn
+    })
+    portfolioContentH2[0].innerHTML = portfolioValue.en.portfolioContentTitle1
+    portfolioContentP[0].innerHTML = portfolioValue.en.portfolioContentText1
+    portfolioContentH2[1].innerHTML = portfolioValue.en.portfolioContentTitle2
+    portfolioContentP[1].innerHTML = portfolioValue.en.portfolioContentText2
+
+    /* contact */
+    contactSectionTitle.innerHTML = contactValue.en.contactSectionTitle
+    contactSectionSubTitle.innerHTML = contactValue.en.contactSectionSubTitle
+    contactTitle[0].innerHTML = contactValue.en.contactTitleL
+    contactSubTitle[0].innerHTML = contactValue.en.contactSubTitleL
+    contactInfoItemTextH4[0].innerHTML = contactValue.en.contactInfoItemText1
+    contactInfoItemTextH4[1].innerHTML = contactValue.en.contactInfoItemText2
+    contactTitle[1].innerHTML = contactValue.en.contactTitleR
+    contactSubTitle[1].innerHTML = contactValue.en.contactSubTitleR
+    formItem[0].innerHTML = contactValue.en.formItemName
+    formItem[2].innerHTML = contactValue.en.formItemSubject
+    formItemBtn.innerHTML = contactValue.en.formItemBtn
 }

@@ -37,6 +37,8 @@ export const homeValue = {
 
 export const aboutValue = {
     en: {
+        aboutSectionTitle:"About <span>Me</span>",
+        aboutSectionSubTitle :"Resume",
         aboutTitle1: "PERSONAL <span>INFOS</span>",
         aboutText1: "My personal information is here. Any other information you have questions can contact me to ask",
         infoItemName:  "Name : <span>Trần Anh Vũ</span>",
@@ -76,6 +78,8 @@ export const aboutValue = {
     },
 
     vn: {
+        aboutSectionTitle:"<span>Vũ Trần</span> là ai ?",
+        aboutSectionSubTitle :"Sơ yếu lý lịch",
         aboutTitle1: "THÔNG <span>TIN</span> <span>CÁ</span> <span>NHÂN</span> ",
         aboutText1: "Thông tin cá nhân của tôi là ở đây. Mọi thông tin thắc mắc các bạn có thể liên hệ với mình để hỏi",
         infoItemName:  "Tên : <span>Trần Anh Vũ</span>",
@@ -117,6 +121,8 @@ export const aboutValue = {
 
 export const serviceValue = {
     en: {
+        serviceSectionTitle:"My <span>Services</span>",
+        serviceSectionSubTitle :"My Feature",
         serviceItemInnerTitle1: "Phone Interface",
         serviceItemInnerText1: "Compatible with many phones, simple interface easy to operate",
         serviceItemInnerTitle2: "Code Language",
@@ -132,6 +138,8 @@ export const serviceValue = {
     },
 
     vn: {
+        serviceSectionTitle:"<span> Dịch vụ </span> của tôi",
+        serviceSectionSubTitle :"Tính năng",
         serviceItemInnerTitle1: "Giao diện điện thoại",
         serviceItemInnerText1: "Tương thích với nhiều loại điện thoại, giao diện đơn giản dễ vận hành",
         serviceItemInnerTitle2: "Ngôn ngữ code",
@@ -145,6 +153,65 @@ export const serviceValue = {
         serviceItemInnerTitle6: "Thời gian hoàn thành",
         serviceItemInnerText6: "Dự án sẽ hoàn thành đúng thời hạn",
     }
+}
+
+export const portfolioValue = {
+    en: {
+        portfolioSectionTitle:"My <span>Portfolio</span>",
+        portfolioSectionSubTitle :"Works",
+        portfolioHeading: "My <span>Projects</span>",
+        portfolioContentBtn:"Live Demo",
+        portfolioContentTitle1: "Title : Personal information card ",
+        portfolioContentText1: "Describe : This is the website used to load my personal card. It was implemented"
+                                +"in early 2021. Since it is a product at the beginning of programming, it still"
+                                +"has a lot of bugs.",
+        portfolioContentTitle2: "Title : Sales website ",
+        portfolioContentText2: "Describe : It will happen soon",
+    },
+
+    vn: {
+        portfolioSectionTitle:"<span> Những sản phẩm </span> của tôi",
+        portfolioSectionSubTitle :"Công Việc",
+        portfolioHeading: "DỰ <span>Án</span> <span>Của</span> <span>Tôi</span>",
+        portfolioContentBtn:"Thử Trực Tiếp",
+        portfolioContentTitle1: "Tiêu đề: Thẻ thông tin cá nhân",
+        portfolioContentText1: "Mô tả: Đây là trang web dùng để nạp vào thẻ cá nhân của tôi. Nó được"
+                                +"triển khai vào đầu năm 2021. Vì là một sản phẩm ở giai đoạn đầu lập"
+                                +"trình nên nó vẫn còn rất nhiều lỗi.",
+        portfolioContentTitle2: "Title : Trang web bán hàng",
+        portfolioContentText2: "Describe : Sẽ sớm diễn ra",
+    },
+}
+
+export const contactValue = {
+    en: {
+        contactSectionTitle:"Get In <span>Touch</span>",
+        contactSectionSubTitle :"Contact",
+        contactTitleL: "Have You Any Questions ?",
+        contactSubTitleL:"Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
+        contactInfoItemText1: "Office",
+        contactInfoItemText2: "Call Us On",
+        contactTitleR:"SEND ME AN EMAIL",
+        contactSubTitleR:"I will respond to your message as soon as possible",
+        formItemName :"Name",
+        formItemSubject :"Subject",
+        formItemBtn :"Send Message",
+
+    },
+
+    vn: {
+        contactSectionTitle:"<span>Liên hệ</span> với tôi",
+        contactSectionSubTitle :"Liên Lạc",
+        contactTitleL: "Bạn muốn hỏi gì ?",
+        contactSubTitleL:"Hãy liên hệ với tôi. Tôi luôn cởi mở để thảo luận về các dự án mới, ý tưởng sáng tạo hoặc cơ hội trở thành một phần trong tầm nhìn của bạn.",
+        contactInfoItemText1: "Văn phòng",
+        contactInfoItemText2: "Gọi cho chúng tôi",
+        contactTitleR:"GỬI CHO TÔI MỘT EMAIL",
+        contactSubTitleR:"Tôi Sẽ phản hồi tin nhắn của bạn nhanh nhất",
+        formItemName :"Tên",
+        formItemSubject :"Chủ đề",
+        formItemBtn :"Gửi Tin Nhắn",
+    },
 }
 
 
