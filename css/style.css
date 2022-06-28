@@ -800,12 +800,12 @@ h3.my-profession {
     position: absolute;
     height: 40px;
     width: 35%;
-    min-width: 230px;
+    min-width: 200px;
     bottom: 40px;
     left: 20px;
     background:transparent;
     border: 1px solid var(--skin-color);
-    padding: 10px 40px;
+    padding: 10px 20px;
     border-radius: 20px;
     display: flex;
     align-items: center;

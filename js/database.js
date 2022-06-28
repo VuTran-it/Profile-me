@@ -79,7 +79,7 @@ export const aboutValue = {
 
     vn: {
         aboutSectionTitle:"<span>Vũ Trần</span> là ai ?",
-        aboutSectionSubTitle :"Sơ yếu lý lịch",
+        aboutSectionSubTitle :"Lý lịch",
         aboutTitle1: "THÔNG <span>TIN</span> <span>CÁ</span> <span>NHÂN</span> ",
         aboutText1: "Thông tin cá nhân của tôi là ở đây. Mọi thông tin thắc mắc các bạn có thể liên hệ với mình để hỏi",
         infoItemName:  "Tên : <span>Trần Anh Vũ</span>",
