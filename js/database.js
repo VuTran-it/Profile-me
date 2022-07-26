@@ -29,7 +29,7 @@ export const homeValue = {
     vn: {
         hello: "Xin chào, Tôi là",
         myprofession: "Tôi là một",
-        pText: "Tôi là nhà phát triển front-end và nhiếp ảnh gia. Ngoài kiến thức về lập trình website, mình còn có thể thiết kế hình ảnh, kỹ năng này giúp ích rất nhiều cho việc tạo website."
+        pText: "Tôi là nhà phát triển giao diện và nhiếp ảnh gia. Ngoài kiến thức về lập trình website, mình còn có thể thiết kế hình ảnh, kỹ năng này giúp ích rất nhiều cho việc tạo website."
                 +"Tuy mình không quá giỏi về lập trình website nhưng mình rất thích công việc này nên mình tiếp thu nhanh kiến thức và chăm chỉ học về lập trình website.",
         aText: "<span></span><span></span> Tải Xuống CV"
     }

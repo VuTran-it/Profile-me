@@ -333,7 +333,7 @@ h3.my-profession {
     height: calc(100vh - 250px);
     text-align: center;
     position: relative;
-    background: url('../img/ironman.png');
+    background: url('../img/avatar.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
