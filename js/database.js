@@ -55,16 +55,16 @@ export const aboutValue = {
         Education: "Education",
         EducationTimelineDate1: "2019 - 2021",
         EducationTimelineTitle1: "Front-end learning route(HTML,CSS,JS) - <span>F8</span>",
-        EducationTimelineItem1: "This course helped me build a website interface"
-                    +"analyze the website interface, make effects with animation"
-                    +".....After completing this course, I knew the basic process of"
+        EducationTimelineItem1: "This course helped me build a website interface "
+                    +"analyze the website interface, make effects with animation "
+                    +".....After completing this course, I knew the basic process of "
                     +"building a website and was able to build a website myself.",
         EducationTimelineDate2: "2022 - Present",
         EducationTimelineTitle2: "Building Websites with ReactJS - <span> F8 </span>",
-        EducationTimelineItem2:   "React is a JavaScript library, dedicated to helping developers"
-                    +"build user interfaces (UIs). In the field of websites and web"
-                    +"applications, UI is a collection of on-screen menus, search"
-                    +"bars, buttons, etc., ie everything a user uses to interact with"
+        EducationTimelineItem2:   "React is a JavaScript library, dedicated to helping developers "
+                    +"build user interfaces (UIs). In the field of websites and web "
+                    +"applications, UI is a collection of on-screen menus, search "
+                    +"bars, buttons, etc., ie everything a user uses to interact with "
                     +"a website or app. That's why I chose to learn ReactJS",
         EducationTimelineDate3: "Coming Soon",
         EducationTimelineTitle3: "Build website with PHP -",
@@ -72,8 +72,8 @@ export const aboutValue = {
         Experience: "Experience",
         ExperienceTimelineDate1: "2019 - Present",
         ExperienceTimelineTitle1: "University Degree - Major In IT - <span>IUH</span>",
-        ExperienceTimelineItem1: " I chose to major in information technology at IUH University to"
-                    +"study. Here, I have a lot of knowledge about technology such as"
+        ExperienceTimelineItem1: " I chose to major in information technology at IUH University to "
+                    +"study. Here, I have a lot of knowledge about technology such as "
                     +"website programming, network configuration, iot programming,....."
     },
 
@@ -96,16 +96,16 @@ export const aboutValue = {
         Education: "Giáo <span>Dục</span>",
         EducationTimelineDate1: "2019 - 2021",
         EducationTimelineTitle1: "Lộ trình học Front-end (HTML, CSS, JS) - <span>F8</span>",
-        EducationTimelineItem1: "Khóa học này đã giúp tôi xây dựng giao diện website, phân tích giao"
-                    +"diện trang web, tạo hiệu ứng chuyển động, ..... Sau khi học xong"
-                    +"khóa học này, tôi đã biết quy trình cơ bản để xây dựng một trang web"
+        EducationTimelineItem1: "Khóa học này đã giúp tôi xây dựng giao diện website, phân tích giao "
+                    +"diện trang web, tạo hiệu ứng chuyển động, ..... Sau khi học xong "
+                    +"khóa học này, tôi đã biết quy trình cơ bản để xây dựng một trang web "
                     +"và có thể tự xây dựng một trang web.",
         EducationTimelineDate2: "2022 - Hiện Nay",
         EducationTimelineTitle2: "Xây dựng trang web với ReactJS - <span> F8 </span>",
-        EducationTimelineItem2:   "React là một thư viện JavaScript, dành riêng để giúp các nhà phát"
-                    +"triển xây dựng giao diện người dùng (UI). Trong lĩnh vực trang web và"
-                    +"ứng dụng web, UI là tập hợp các menu trên màn hình, thanh tìm kiếm,"
-                    +"nút, v.v., tức là mọi thứ mà người dùng sử dụng để tương tác với một"
+        EducationTimelineItem2:   "React là một thư viện JavaScript, dành riêng để giúp các nhà phát "
+                    +"triển xây dựng giao diện người dùng (UI). Trong lĩnh vực trang web và "
+                    +"ứng dụng web, UI là tập hợp các menu trên màn hình, thanh tìm kiếm, "
+                    +"nút, v.v., tức là mọi thứ mà người dùng sử dụng để tương tác với một "
                     +"trang web hoặc ứng dụng. Đó là lý do tại sao tôi chọn học ReactJS",
         EducationTimelineDate3: "Sắp có",
         EducationTimelineTitle3: "Xây dựng trang web bằng PHP -",
@@ -114,7 +114,7 @@ export const aboutValue = {
         ExperienceTimelineDate1: "2019 - Hiện Nay",
         ExperienceTimelineTitle1: "Bằng Đại học - Chuyên ngành CNTT - <span>IUH</span>",
         ExperienceTimelineItem1: " Mình đã chọn chuyên ngành công nghệ thông tin tại trường đại học  "
-                    +"IUH để theo học. Tại đây, mình đã có rất nhiều kiến thức về công nghệ"
+                    +"IUH để theo học. Tại đây, mình đã có rất nhiều kiến thức về công nghệ "
                     +"như lập trình website, cấu hình mạng, lập trình iot,....."
     },
 }
@@ -162,8 +162,8 @@ export const portfolioValue = {
         portfolioHeading: "My <span>Projects</span>",
         portfolioContentBtn:"Live Demo",
         portfolioContentTitle1: "Title : Personal information card ",
-        portfolioContentText1: "Describe : This is the website used to load my personal card. It was implemented"
-                                +"in early 2021. Since it is a product at the beginning of programming, it still"
+        portfolioContentText1: "Describe : This is the website used to load my personal card. It was implemented "
+                                +"in early 2021. Since it is a product at the beginning of programming, it still "
                                 +"has a lot of bugs.",
         portfolioContentTitle2: "Title : Sales website ",
         portfolioContentText2: "Describe : It will happen soon",
@@ -175,8 +175,8 @@ export const portfolioValue = {
         portfolioHeading: "DỰ <span>Án</span> <span>Của</span> <span>Tôi</span>",
         portfolioContentBtn:"Thử Trực Tiếp",
         portfolioContentTitle1: "Tiêu đề: Thẻ thông tin cá nhân",
-        portfolioContentText1: "Mô tả: Đây là trang web dùng để nạp vào thẻ cá nhân của tôi. Nó được"
-                                +"triển khai vào đầu năm 2021. Vì là một sản phẩm ở giai đoạn đầu lập"
+        portfolioContentText1: "Mô tả: Đây là trang web dùng để nạp vào thẻ cá nhân của tôi. Nó được "
+                                +"triển khai vào đầu năm 2021. Vì là một sản phẩm ở giai đoạn đầu lập "
                                 +"trình nên nó vẫn còn rất nhiều lỗi.",
         portfolioContentTitle2: "Title : Trang web bán hàng",
         portfolioContentText2: "Describe : Sẽ sớm diễn ra",
