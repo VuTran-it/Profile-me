@@ -110,7 +110,7 @@ export const aboutValue = {
         EducationTimelineDate3: "Sắp có",
         EducationTimelineTitle3: "Xây dựng trang web bằng PHP -",
         /*  Experience */
-        Experience: "Trải <span>Qua</span>",
+        Experience: "Kinh <span>Nghiệm</span>",
         ExperienceTimelineDate1: "2019 - Hiện Nay",
         ExperienceTimelineTitle1: "Bằng Đại học - Chuyên ngành CNTT - <span>IUH</span>",
         ExperienceTimelineItem1: " Mình đã chọn chuyên ngành công nghệ thông tin tại trường đại học  "
