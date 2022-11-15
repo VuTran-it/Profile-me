@@ -25,6 +25,8 @@ languageBtn.addEventListener("click", () => {
     }
 
 })
+/* nav */
+let listMenuSpan = document.querySelectorAll("#menu li span")
 
 /* nav */
 let listNavSpan = document.querySelectorAll(".list span")
@@ -83,6 +85,12 @@ const formItemBtn = document.querySelector('.contact-form .form-item button')
 
 
 function handleVietnamese() {
+    /* menu */
+    listMenuSpan[0].innerHTML = navValue.vn.spanHome
+    listMenuSpan[1].innerHTML = navValue.vn.spanAbout
+    listMenuSpan[2].innerHTML = navValue.vn.spanService
+    listMenuSpan[3].innerHTML = navValue.vn.spanPortfolio
+    listMenuSpan[4].innerHTML = navValue.vn.spanContact
     /* nav */
     listNavSpan[0].innerHTML = navValue.vn.spanHome
     listNavSpan[1].innerHTML = navValue.vn.spanAbout
@@ -166,6 +174,12 @@ function handleVietnamese() {
 }
 
 function handleEnglish() {
+    /* menu */
+    listMenuSpan[0].innerHTML = navValue.en.spanHome
+    listMenuSpan[1].innerHTML = navValue.en.spanAbout
+    listMenuSpan[2].innerHTML = navValue.en.spanService
+    listMenuSpan[3].innerHTML = navValue.en.spanPortfolio
+    listMenuSpan[4].innerHTML = navValue.en.spanContact
     /* nav */
     listNavSpan[0].innerHTML = navValue.en.spanHome
     listNavSpan[1].innerHTML = navValue.en.spanAbout

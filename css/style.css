@@ -196,7 +196,43 @@ body {
 .shadow-dark {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.25);
 }
+/* MENU */
+#menu 
+{
+    width: 200px;
+    font-weight: bold;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+#menu li
+{
+    padding: 12px 0 12px 0;
+    background-color: var(--bg-black-100);
+    transition: .5s all;
+    overflow: hidden;
+}
 
+#menu li a
+{
+    color: var(--text-black-900);
+    padding: 3px 40px;
+    display: flex;
+    align-items: center;
+}
+#menu li a i 
+{
+    margin-right: 10px;
+}
+
+#menu li:hover
+{
+    background-color: var(--skin-color);
+}
+#menu li:hover a
+{
+    color: var(--bg-black-900);
+}
 /* NAV */
 .toggle
 {
@@ -435,7 +471,14 @@ h3.my-profession {
     display: flex;
     justify-content: center;
 }
-
+.about .about-content .skills .row:hover .skill-item
+{
+    opacity: .5;
+}
+.about .about-content .skills .row:hover .skill-item:hover
+{
+    opacity: 1;
+}
 .about .about-content .skill-item
 {
     flex: 0 0 20%;
@@ -444,140 +487,90 @@ h3.my-profession {
     padding: 0 30px;
     position: relative;    
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    transition: 0.7s all;
 }
-.about .about-content .skill-item .percent
+.about .about-content .skill-item .skill-content
 {
-    position: relative;
-    width: 130px;
-    height: 130px;
-}
-
-.about .about-content .skill-item .percent svg
-{
-    position: relative;
-    width: 130px;
-    height: 130px;
-    transform: rotate(270deg);
-}
-
-.about .about-content .skill-item .percent svg circle
-{
-    width: 100%;
-    height: 100%;
-    fill: transparent;
-    stroke-width: 10;
-    stroke: var(--bg-black-100);
-    transform: translate(5px,5px);
-}
-
-.about .about-content .skill-item .percent svg circle:nth-child(2)
-{
-    stroke:var(--skin-color);
-    stroke-dasharray: 380;
-    stroke-dashoffset: calc(380 - (380 * var(--num)) / 100);
-    opacity: 0;
-    animation: animateCircle 1s linear forwards;
-    animation-delay: 2s;
-}
-
-@keyframes animateCircle {
-    0%
-    {
-        opacity: 0;
-    } 
-    100%
-    {
-        opacity: 1;
-    }
-}
-
-.skill-item .dot
-{
-    position: absolute;
-    inset: 5px;
-    z-index: 10;
-    transform: rotate(calc(3.6deg * var(--num)));
-    animation: animateDot 2s linear forwards;
-}
-
-@keyframes animateDot {
-    0%
-    {
-        transform: rotate(0deg);
-    }
-    100%
-    {
-        transform: rotate(calc(3.6deg * var(--num)));
-    }
-}
-
-.skill-item  .dot::before
-{
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--skin-color);
-}
-
-.skill-item .text
-{
-    position: absolute;
-    inset: 0;
+    color: var(--skin-color);
+    width: 120px;
+    height: 120px;
+    background-color: var(--bg-black-100);
+    box-shadow: 2px 2px 3px 0px var(--bg-black-50);
+    border-radius: 0px 40% 0 40%;
+    transition: .5s all;
+    padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    animation: animateCircle 1s linear forwards;
-    animation-delay: 2s;
-}
-
-.skill-item .text p
-{
-    font-weight: 500;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: var(--text-black-900);
-}
-
-/* .about .about-content .skills .skill-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.about .about-content .skills .skill-item h5 {
-    line-height: 40p;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--text-black-900);
-    text-transform: capitalize;
-}
-
-.about .about-content .skills .skill-item .progress {
-    background: var(--bg-black-50);
-    height: 7px;
-    border-radius: 4px;
-    width: 100%;
     position: relative;
+    overflow: hidden;
 }
-
-.about .about-content .skills .skill-item {
-    margin-bottom: 20px;
-}
-
-.about .about-content .skills .skill-item .progress-in {
+.about .about-content .skill-item .skill-content::before
+{
+    content: "";
     position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    border-radius: 4px;
-    background: var(--skin-color);
-} */
+    width: 150%;
+    height: 150%;
+    background:linear-gradient(var(--skin-color),var(--bg-black-100));
+    transform: rotate(45deg);
+    position: absolute;
+    right: -140%;
+    top: 80%;
+}
+.about .about-content .skill-item .skill-content:hover:before
+{
+    animation: onHover 0.7s 1;
+    right:-20%;
+    top:-20%;
+}
+
+.about .about-content .skill-item .skill-content i
+{
+    font-size: 32px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: .5s all;
+}
+.about .about-content .skill-item .skill-content svg
+{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    color: var(--skin-color);
+}
+.about .about-content .skill-item .skill-content:hover svg,
+.about .about-content .skill-item .skill-content:hover i, 
+.about .about-content .skill-item .skill-content:hover span 
+{
+    color: var(--text-black-900);    
+}
+
+.about .about-content .skill-item .skill-content span
+{
+    position: relative;
+    transition: .5s all;
+    font-size: 12px;
+}
+
+@keyframes onHover {
+    0%{
+        right: -130%;
+        top: 70%;
+    }
+    50%{
+        right: -20%;
+        top: -20%;
+    }
+    100%{
+        right: -20%;
+        top: -20%;
+    }
+}
+
 
 .about .about-content .education,
 .about .about-content .experience {

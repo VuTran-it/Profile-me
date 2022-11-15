@@ -98,3 +98,17 @@ function deleteValue() {
     document.getElementById('subject').value = ""
     document.getElementById('message').value = ""
 }
+
+/* MENU */
+let menu = document.getElementById('menu');
+console.log(menu);
+document.addEventListener('contextmenu',(event)=> {
+    event.preventDefault();
+    menu.style.display ='block';
+    menu.style.top = event.y +'px';
+    menu.style.left = event.x +'px';
+})
+
+document.addEventListener('click', ()=>{
+    menu.style.display ='none';
+})
