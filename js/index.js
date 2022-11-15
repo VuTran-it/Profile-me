@@ -6,9 +6,11 @@ var typed = new Typed(".typing", {
     loop: true
 })
 
+
+
 /* NAV */
 const nav = document.querySelector('.nav'),
-    navList = document.querySelectorAll('li'),
+    navList = document.querySelectorAll('.nav li'),
     totalNavList = navList.length,
     allSection = document.querySelectorAll('.section'),
     totalSection = allSection.length;
@@ -63,6 +65,21 @@ document.querySelector(".hire-me").addEventListener("click", function () {
     removeBackSection()
     addBackSection(sectionIndex)
 })
+/* MENU */
+const menuList = document.querySelectorAll('#menu li');
+menuList.forEach((item,index) => {
+    item.addEventListener("click", function () {
+        removeBackSection()
+        for (let j = 0; j < totalNavList; j++) {
+            if (navList[j].classList.contains("active")) {
+                addBackSection(j);
+            }
+            navList[j].classList.remove("active");
+        }
+        setTimeout(()=>{navList[index].classList.add("active")},10)
+        showSection(navList[index].querySelector('a'));
+    })
+})
 
 
 /* PORTFOLIO */
@@ -101,7 +118,6 @@ function deleteValue() {
 
 /* MENU */
 let menu = document.getElementById('menu');
-console.log(menu);
 document.addEventListener('contextmenu',(event)=> {
     event.preventDefault();
     menu.style.display ='block';

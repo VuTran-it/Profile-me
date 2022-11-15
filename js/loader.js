@@ -1,4 +1,4 @@
-const valueLoader = document.querySelector('.value-loader');
+let valLoader = document.querySelector('.value-loader');
 
 let progressValue = 0;
 let progressEndValue = 100;
@@ -6,7 +6,7 @@ let speed = 20;
 
 let progress = setInterval(() =>{
     progressValue++;
-    valueLoader.textContent = `${progressValue}%`;
+    valLoader.textContent = `${progressValue}%`;
 
     if(progressValue == progressEndValue)
     {
