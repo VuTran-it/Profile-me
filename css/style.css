@@ -968,6 +968,7 @@ h3.my-profession {
 
 .contact .contact-form .form-item {
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .contact .contact-form .form-item .inputBox {
@@ -1031,4 +1032,11 @@ h3.my-profession {
 .contact .contact-form .form-item textarea.form-control {
     height: 50px;
     padding: 5px 50px;
+}
+
+.contact .contact-form .form-item .error 
+{   
+    color: red;
+    font-weight: bold;
+    display: none;
 }

@@ -8,23 +8,36 @@ import database, {
 } from "./database.js"
 
 const languageBtn = document.querySelector('.language')
-const defaultLanguage = "EN"
+let defaultLanguage = "EN";
 const spanLanguage = document.querySelector('.language span')
-
-spanLanguage.innerHTML = "EN";
+//Render nội dung khi trang web được load
+window.addEventListener("load", () => {
+    if(defaultLanguage === "EN")
+    {
+        spanLanguage.innerHTML = "VN";
+        handleEnglish();
+    }
+    else
+    {
+        spanLanguage.innerHTML = "EN";
+        handleVietnamese();
+    }
+})
 
 /* Xử lí nút */
 languageBtn.addEventListener("click", () => {
-    if (spanLanguage.innerHTML === "EN") {
-        spanLanguage.innerHTML = "VN";
+    if (spanLanguage.innerHTML === "VN") {
+        defaultLanguage = "VN";   
         handleVietnamese();
-
-    } else {
         spanLanguage.innerHTML = "EN";
+    } else {
+        defaultLanguage = "EN";
         handleEnglish();
+        spanLanguage.innerHTML = "VN";
     }
-
 })
+
+
 /* nav */
 let listMenuSpan = document.querySelectorAll("#menu li span")
 
@@ -81,6 +94,7 @@ const contactSubTitle = document.querySelectorAll('.contact-sub-title')
 const contactInfoItemTextH4 = document.querySelectorAll('.contact-info-item h4')
 const formItem = document.querySelectorAll('.contact-form .form-item span')
 const formItemBtn = document.querySelector('.contact-form .form-item button')
+const formError = document.querySelector('.contact-form .form-item .error')
 
 
 
@@ -171,6 +185,8 @@ function handleVietnamese() {
     formItem[0].innerHTML = contactValue.vn.formItemName
     formItem[2].innerHTML = contactValue.vn.formItemSubject
     formItemBtn.innerHTML = contactValue.vn.formItemBtn
+    formError.innerHTML = contactValue.vn.formError
+
 }
 
 function handleEnglish() {
@@ -260,4 +276,6 @@ function handleEnglish() {
     formItem[0].innerHTML = contactValue.en.formItemName
     formItem[2].innerHTML = contactValue.en.formItemSubject
     formItemBtn.innerHTML = contactValue.en.formItemBtn
+    formError.innerHTML = contactValue.en.formError
+
 }

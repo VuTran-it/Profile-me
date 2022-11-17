@@ -94,19 +94,44 @@ for (let i = 0; i < portfolioItemInner.length; i++) {
 
 /* email js */
 function sendEmail(params) {
-    var tempParams = {
-        name: document.getElementById("name").value,
-        email: document.getElementById('email').value,
-        subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value
+    let name = document.getElementById("name").value;
+    let email = document.getElementById('email').value;
+    let subject = document.getElementById('subject').value;
+    let message = document.getElementById('message').value;
+    const formError = document.querySelector('.contact-form .form-item .error')
+
+    if(checkSendEmail(name,email,subject,message)) 
+    {
+        var tempParams = {
+            name: name,
+            email: email,
+            subject: subject,
+            message:message 
+        }
+    
+        emailjs.send('service_6koznlq', 'template_hcm6nlk', tempParams)
+            .then(function (res) {
+                console.log("success", res.status);
+            })
+    
+        deleteValue()
+        formError.style.display = 'none';
     }
-
-    emailjs.send('service_6koznlq', 'template_hcm6nlk', tempParams)
-        .then(function (res) {
-            console.log("success", res.status);
-        })
-
-    deleteValue()
+    else
+    {
+        formError.style.display = 'block';
+    }
+}
+function checkSendEmail(name,email,subject,message)
+{
+    if(name != '' && email != '' && subject != '' && message !='') 
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
 }
 
 function deleteValue() {
@@ -141,4 +166,3 @@ if(screen.width >= 1200)
         menu.style.display ='none';
     })
 }
-

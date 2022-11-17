@@ -196,7 +196,7 @@ export const contactValue = {
         formItemName :"Name",
         formItemSubject :"Subject",
         formItemBtn :"Send Message",
-
+        formError: "Please fill in the information before pressing submit"
     },
 
     vn: {
@@ -211,6 +211,7 @@ export const contactValue = {
         formItemName :"Tên",
         formItemSubject :"Chủ đề",
         formItemBtn :"Gửi Tin Nhắn",
+        formError: "Vui lòng điền thông tin trước khi nhấn gửi"
     },
 }
 
