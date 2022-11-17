@@ -116,6 +116,16 @@ function deleteValue() {
     document.getElementById('message').value = ""
 }
 
+/* Xử lý tuổi */
+const yearToBirth = 2001;
+
+let today = new Date();
+const year = today.getFullYear();
+
+let age  = year - yearToBirth;
+
+let ageBox = document.querySelector('.personal-info .age');
+ageBox.textContent = age;
 /* MENU */
 if(screen.width >= 1200)
 {

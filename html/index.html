@@ -27,6 +27,9 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
     <!-- script -->
 </head>
 
@@ -156,7 +159,7 @@
                                         </div>
 
                                         <div class="info-item padd-15">
-                                            <p>Age : <span> 21 </span></p>
+                                            <p>Age : <span class="age"></span></p>
                                         </div>
 
                                         <div class="info-item padd-15">
@@ -510,50 +513,92 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <!-- portfolio item start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <span></span>
-                                <span></span>
-                                <div class="portfolio-img" style="--img-url:url(../img/h1.jpg);"></div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- portfolio item start -->
+                            <div class="portfolio-item swiper-slide">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="portfolio-img" style="--img-url:url(../img/h1.jpg);"></div>
 
-                                <div class="portfolio-content">
-                                    <h2>Title : Personal information card </h2>
-                                    <p>
-                                        Describe : This is the website used to load my personal card. It was implemented
-                                        in early 2021. Since it is a product at the beginning of programming, it still
-                                        has a lot of bugs.
-                                    </p>
+                                    <div class="portfolio-content">
+                                        <h2>Title : Personal information card </h2>
+                                        <p>
+                                            Describe : This is the website used to load my personal card. It was implemented
+                                            in early 2021. Since it is a product at the beginning of programming, it still
+                                            has a lot of bugs.
+                                        </p>
 
-                                    <div class="btn-liveDemo">
-                                        <a href="https://vutran-it.github.io/Home/html/index.html" target='_blank'> Live
-                                            Demo </a>
-                                        <i class="fa-solid fa-paper-plane"></i>
+                                        <div class="btn-liveDemo">
+                                            <a href="https://vutran-it.github.io/Home/html/index.html" target='_blank'> Live
+                                                Demo </a>
+                                            <i class="fa-solid fa-paper-plane"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- portfolio item end -->
-                        <!-- portfolio item start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <span></span>
-                                <span></span>
-                                <div class="portfolio-img" style="--img-url:url(../img/h2.jpg);"></div>
+                            <!-- portfolio item end -->
+                            <!-- portfolio item start -->
+                            <div class="portfolio-item swiper-slide">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="portfolio-img" style="--img-url:url(../img/h2.jpg);"></div>
 
-                                <div class="portfolio-content">
-                                    <h2>Title : Sales website</h2>
-                                    <p>Describe : It will happen soon</p>
+                                    <div class="portfolio-content">
+                                        <h2>Title : Sales website</h2>
+                                        <p>Describe : It will happen soon</p>
 
-                                    <div class="btn-liveDemo">
-                                        <a href=""> Live Demo </a>
-                                        <i class="fa-solid fa-paper-plane"></i>
+                                        <div class="btn-liveDemo">
+                                            <a href=""> Live Demo </a>
+                                            <i class="fa-solid fa-paper-plane"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- portfolio item end -->
+
+                             <!-- portfolio item start -->
+                             <div class="portfolio-item swiper-slide">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="portfolio-img" style="--img-url:url(../img/h2.jpg);"></div>
+
+                                    <div class="portfolio-content">
+                                        <h2>Title : Sales website</h2>
+                                        <p>Describe : It will happen soon</p>
+
+                                        <div class="btn-liveDemo">
+                                            <a href=""> Live Demo </a>
+                                            <i class="fa-solid fa-paper-plane"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- portfolio item end -->
+
+                             <!-- portfolio item start -->
+                             <div class="portfolio-item swiper-slide">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="portfolio-img" style="--img-url:url(../img/h2.jpg);"></div>
+
+                                    <div class="portfolio-content">
+                                        <h2>Title : Sales website</h2>
+                                        <p>Describe : It will happen soon</p>
+
+                                        <div class="btn-liveDemo">
+                                            <a href=""> Live Demo </a>
+                                            <i class="fa-solid fa-paper-plane"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- portfolio item end -->
                         </div>
-                        <!-- portfolio item end -->
 
                     </div>
                 </div>
@@ -751,6 +796,29 @@
     <script src="../js/index.js"></script>
     <script src="../js/navMobile.js"></script>
     <script src="../js/style-switcher.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+    </script>
 
 </body>
 
