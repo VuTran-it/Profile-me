@@ -117,22 +117,18 @@ function deleteValue() {
 }
 
 /* MENU */
-window.addEventListener("resize",() => {
-    console.log(screen.width)
-    console.log(screen.width >= 1200);
-    
-    if(screen.width >= 1200)
-    {
-        let menu = document.getElementById('menu');
-        document.addEventListener('contextmenu',(event)=> {
-            event.preventDefault();
-            menu.style.display ='block';
-            menu.style.top = event.y +'px';
-            menu.style.left = event.x +'px';
-        })
-    
-        document.addEventListener('click', ()=>{
-            menu.style.display ='none';
-        })
-    }
-})
+if(screen.width >= 1200)
+{
+    let menu = document.getElementById('menu');
+    document.addEventListener('contextmenu',(event)=> {
+        event.preventDefault();
+        menu.style.display ='block';
+        menu.style.top = event.y +'px';
+        menu.style.left = event.x +'px';
+    })
+
+    document.addEventListener('click', ()=>{
+        menu.style.display ='none';
+    })
+}
+
