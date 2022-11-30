@@ -172,6 +172,10 @@ function handleVietnamese() {
     portfolioContentP[0].innerHTML = portfolioValue.vn.portfolioContentText1
     portfolioContentH2[1].innerHTML = portfolioValue.vn.portfolioContentTitle2
     portfolioContentP[1].innerHTML = portfolioValue.vn.portfolioContentText2
+    portfolioContentH2[2].innerHTML = portfolioValue.vn.portfolioContentTitle3
+    portfolioContentP[2].innerHTML = portfolioValue.vn.portfolioContentText3
+    portfolioContentH2[3].innerHTML = portfolioValue.vn.portfolioContentTitle4
+    portfolioContentP[3].innerHTML = portfolioValue.vn.portfolioContentText4
 
     /* contact */
     contactSectionTitle.innerHTML = contactValue.vn.contactSectionTitle
@@ -263,6 +267,10 @@ function handleEnglish() {
     portfolioContentP[0].innerHTML = portfolioValue.en.portfolioContentText1
     portfolioContentH2[1].innerHTML = portfolioValue.en.portfolioContentTitle2
     portfolioContentP[1].innerHTML = portfolioValue.en.portfolioContentText2
+    portfolioContentH2[2].innerHTML = portfolioValue.en.portfolioContentTitle3
+    portfolioContentP[2].innerHTML = portfolioValue.en.portfolioContentText3
+    portfolioContentH2[3].innerHTML = portfolioValue.en.portfolioContentTitle4
+    portfolioContentP[3].innerHTML = portfolioValue.en.portfolioContentText4
 
     /* contact */
     contactSectionTitle.innerHTML = contactValue.en.contactSectionTitle
