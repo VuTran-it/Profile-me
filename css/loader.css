@@ -8,14 +8,14 @@
     background: var(--bg-black-900);
     z-index: 999;
 }
-.loader
+.load
 {
     position: relative;
     width: 180px;
     height: 180px;
 }
 
-.loader span 
+.load span 
 {
     position: absolute;
     top: 0;
@@ -25,7 +25,7 @@
     transform: rotate(calc(18deg * var(--i)));
 }
 
-.loader span::before
+.load span::before
 {
     content: '';
     position: absolute;
